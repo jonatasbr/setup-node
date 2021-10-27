@@ -14,8 +14,7 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
-      "yarn prettier --write --ignore-unknown"
+      "yarn lint --fix"
     ]
   },
   "devDependencies": {
