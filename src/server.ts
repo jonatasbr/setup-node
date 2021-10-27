@@ -2,7 +2,7 @@ import express from "express"
 
 const app = express()
 app.get("/", (request, response) => {
-    return response.json({ message: "hello, template node" })
+    return response.json({ message: "olá, template node" })
 })
 app.listen(3333)
 
