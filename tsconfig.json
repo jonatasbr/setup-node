@@ -1,17 +1,12 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "module": "commonjs",
     "rootDir": "./src",
     "outDir": "./dist",
     "baseUrl": "./",
-    "typeRoots": [
-      "./node_modules/@types",
-      "./src/@types"
-    ],
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
     "removeComments": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
