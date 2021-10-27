@@ -15,7 +15,6 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn test --findRelatedTests --bail",
       "yarn prettier --write --ignore-unknown"
     ]
   },
