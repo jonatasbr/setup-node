@@ -9,25 +9,32 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "eslint src --max-warnings=0",
+    "prettier:write": "npx prettier --write .",
     "prettier:check": "npx prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
   },
   "lint-staged": {
     "src/**/*": [
+      "yarn prettier:write",
       "yarn prettier:check",
-      "yarn lint --fix"
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
     ]
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.4"
   },
