@@ -1,6 +1,5 @@
 import express from 'express';
 
-const foo = 'foo';
 const app = express();
 app.get('/', (request, response) => {
   return response.json({ message: 'olá, template node' });

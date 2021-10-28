@@ -14,6 +14,7 @@
   },
   "lint-staged": {
     "src/**/*": [
+      "yarn prettier:check",
       "yarn lint --fix"
     ]
   },
